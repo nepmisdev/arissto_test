@@ -741,3 +741,31 @@ function test(){
 	echo "Hello World!";
 	echo "testing";
 }
+add_shortcode( 'basicInfo','basicInfo' );
+function basicInfo(){
+	/*if ( is_user_logged_in() ) {
+		$db = connectDB();
+		
+		$username = wp_get_current_user()->user_login;
+		
+		$sql = "SELECT Name, Email, Contact, M_Addr1, M_Addr2, M_City, M_State, M_Postcode FROM ct_myaccount_flutter WHERE Email = '".$username."'";
+		$result = $db->get_results($sql);
+		foreach($result as $val){
+			$member-name = $val->Name;
+			$member-email = $val->Email;
+            $member-hp = $val -> Contact;
+            $member-address = $val->M_Addr1 + M_Addr2;
+		}
+
+		return '<div id="info">
+                <p class="title">Name</p>
+                <p class="txtdb" id="member-name">'.$member-name.'</p>
+                <p class="title">Email:</p>
+                <p class="txtdb" id="member-email">'.$member-email.'</p>
+                <p class="title">Contact Number:</p>
+                <p class="txtdb" id="member-hp">'.$member-hp.'</p>
+                <p class="title">Billing Address</p>
+                <p class="txtdb" id="member-address">'.$member-address.'</p></div>';
+		}*/
+	echo "balalalala";
+        }
