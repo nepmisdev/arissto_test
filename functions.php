@@ -743,7 +743,7 @@ function test(){
 }
 add_shortcode( 'basicInfo','basicInfo' );
 function basicInfo(){
-	/*if ( is_user_logged_in() ) {
+	if ( is_user_logged_in() ) {
 		$db = connectDB();
 		
 		$username = wp_get_current_user()->user_login;
@@ -751,21 +751,21 @@ function basicInfo(){
 		$sql = "SELECT Name, Email, Contact, M_Addr1, M_Addr2, M_City, M_State, M_Postcode FROM ct_myaccount_flutter WHERE Email = '".$username."'";
 		$result = $db->get_results($sql);
 		foreach($result as $val){
-			$member-name = $val->Name;
-			$member-email = $val->Email;
-            $member-hp = $val -> Contact;
-            $member-address = $val->M_Addr1 + M_Addr2;
+			$membername = $val->Name;
+			$memberemail = $val->Email;
+            $memberhp = $val -> Contact;
+            $memberaddress = $val->M_Addr1;
 		}
 
 		return '<div id="info">
                 <p class="title">Name</p>
-                <p class="txtdb" id="member-name">'.$member-name.'</p>
+                <p class="txtdb" id="membername">'.$membername.'</p>
                 <p class="title">Email:</p>
-                <p class="txtdb" id="member-email">'.$member-email.'</p>
+                <p class="txtdb" id="memberemail">'.$memberemail.'</p>
                 <p class="title">Contact Number:</p>
-                <p class="txtdb" id="member-hp">'.$member-hp.'</p>
+                <p class="txtdb" id="memberhp">'.$memberhp.'</p>
                 <p class="title">Billing Address</p>
-                <p class="txtdb" id="member-address">'.$member-address.'</p></div>';
-		}*/
+                <p class="txtdb" id="memberaddress">'.$memberaddress.'</p></div>';
+		}
 	echo "balalalala";
         }
