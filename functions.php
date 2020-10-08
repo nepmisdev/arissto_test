@@ -743,7 +743,7 @@ function test(){
 }
 add_shortcode( 'basicInfo','basicInfo' );
 function basicInfo(){
-	/*if ( is_user_logged_in() ) {
+	if ( is_user_logged_in() ) {
 		$db = connectDB();
 		
 		$username = wp_get_current_user()->user_login;
@@ -766,6 +766,6 @@ function basicInfo(){
                 <p class="txtdb" id="member-hp">'.$member-hp.'</p>
                 <p class="title">Billing Address</p>
                 <p class="txtdb" id="member-address">'.$member-address.'</p></div>';
-		}*/
+		}
 	echo "balalalala";
         }
