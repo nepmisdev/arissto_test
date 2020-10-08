@@ -743,7 +743,24 @@ function test(){
 }
 
 add_shortcode( 'my_profile', 'my_profile' );
-function my_profile(){
-	echo "Hello World!";
-	echo "testing";
+function my_profile() {
+?>
+<script>
+jQuery( document ).ready( function() {
+	function fEditInfo() {
+		var x = document.getElementById("edit-info");
+		var y = document.getElementById("info");
+		var z = document.getElementById("btnEdit");
+
+		if (x.style.display === "none") {
+			x.style.display = "block";
+			y.style.display = "none";
+			z.style.display = "none";
+		} else {
+			x.style.display = "none";
+		}
+	}
+} );
+</script>
+<?php
 }
