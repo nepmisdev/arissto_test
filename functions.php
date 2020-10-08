@@ -13,13 +13,17 @@ function avada_lang_setup() {
 }
 add_action( 'after_setup_theme', 'avada_lang_setup' );
 
+function connectDB(){
+	$dbname = "arissto_testsite";
+	$username = "arissto_testsite";
+	$password = "*5j5Uil5";
+	return new wpdb( $username, $password, $dbname, "localhost" );	
+}
+
 add_shortcode('ratingInfo','ratingInfo');
 function ratingInfo(){
 	if ( is_user_logged_in() ) {
-		$dbname = "arissto_testsite";
-		$username = "arissto_testsite";
-		$password = "*5j5Uil5";
-		$db = new wpdb( $username, $password, $dbname, "localhost" );
+		$db = connectDB();
 		
 		$username = wp_get_current_user()->user_login;
 		
