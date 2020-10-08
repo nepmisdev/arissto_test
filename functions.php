@@ -739,5 +739,5 @@ function myAccountSubs(){
 add_shortcode( 'test', 'test' );
 function test(){
 	echo "Hello World!";
-
+	echo "testing";
 }
