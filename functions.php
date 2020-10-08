@@ -741,3 +741,9 @@ function test(){
 	echo "Hello World!";
 	echo "testing";
 }
+
+add_shortcode( 'my_profile', 'my_profile' );
+function my_profile(){
+	echo "Hello World!";
+	echo "testing";
+}
