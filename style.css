@@ -69,3 +69,205 @@ button.btnB{
   font-size: 15px;
   text-align: center;
 }
+        
+
+        .plan-detail-odd {
+            background-color: rgb(246,232,234);
+            border-radius: 20px;
+            margin: 20px auto 20px auto;
+            box-shadow: 5px 8px 6px rgba(0,0,0,0.2);
+            padding: 0;
+            display: flex;
+        }
+
+        .plan-detail-even {
+            background-color: white;
+            border-radius: 20px;
+            margin: 20px auto 20px auto;
+            box-shadow: 5px 8px 6px rgba(0,0,0,0.2);
+            padding: 0;
+            display: flex;
+        }
+
+        .plan-image {
+            height: 100%;
+            border-radius: 20px;
+            margin: 0 10px 0 0;
+            vertical-align: middle;
+            width: 25%;
+        }
+
+        .plan-words {
+            color: #ab1a2d;
+            margin: auto auto auto 10px;
+            float: left;
+        }
+
+        .heading {
+            margin-top: 20px;
+            color: #ab1a2d;
+            padding: 10px;
+        }
+
+        .dropbtn {
+            background-color: #ab1a2d;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 16px;
+            text-align: left;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(246,232,234);
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 100%;
+        }
+
+            .dropdown-content a {
+                color: #ab1a2d;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .show {
+            display: block;
+        }
+
+        .fa-chevron-right {
+            position: absolute;
+            right: 15px;
+        }
+
+        .fa-chevron-down {
+            position: absolute;
+            right: 15px;
+        }
+
+        #info {
+            border: solid;
+            padding: 0 15px;
+            border-radius: 15px;
+        }
+
+        #edit-info {
+            padding: 10px 15px 15px 15px;
+            border-radius: 15px;
+            display: none;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #ab1a2d;
+            font-weight: 600;
+        }
+
+        input {
+            border: 1px solid #ab1a2d;
+            width: 95%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        textarea {
+            border: 1px solid #ab1a2d;
+            width: 95%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+            resize: none;
+            height: 150px;
+            font-family: 'Century Gothic';
+        }
+
+        .btn {
+            display: inline-block;
+            font-family: 'Century Gothic';
+            margin: 0;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            line-height: 1.3333333;
+            border-radius: 40px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .glyphicon {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: "Glyphicons Halflings";
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .glyphicon-pencil:before {
+            content: "\270e";
+        }
+
+        #btnEdit {
+            float: right;
+            border: none;
+            border-radius: 40px;
+            color: #ab1a2d;
+            background-color: rgb(246,232,234);
+            padding: 3px 20px;
+            border: 1px solid transparent;
+            font-size: 14px;
+        }
+
+        #btnSave {
+            margin: 0;
+            width: 40%;
+            background-color: #ab1a2d;
+            color: white;
+            padding: 5px 0;
+            border: 1px solid #ab1a2d;
+            font-size: 14px;
+        }
+
+        #btnCancel {
+            margin: 0;
+            width: 40%;
+            float: right;
+            background-color: white;
+            color: #ab1a2d;
+            padding: 5px 0;
+            border: 1px solid #ab1a2d;
+            font-size: 14px;
+        }
+
+        .txtdb {
+            color: black;
+        }
+
+        .plan-type {
+            color: black;
+        }
+
