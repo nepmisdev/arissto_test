@@ -774,7 +774,7 @@ function basicInfo(){
 		'.$mstate.'</p></div>';
 		}
         }
-
+/*
 add_shortcode('subPlan', 'subPlan');
 function subPlan() {
         if (is_user_logged_in()) {
@@ -791,7 +791,7 @@ function subPlan() {
             }
 		echo $mplan;
 
-/*
+
             if (stripos($mplan, $applan) !== FALSE) {
                 return '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
