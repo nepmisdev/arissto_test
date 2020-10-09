@@ -781,8 +781,8 @@ function subPlan() {
             $db = connectDB();
 
             $username = wp_get_current_user() -> user_login;
-	    $applan = "ap";
-            $ssplan = "ss";
+	    $applan = "AP";
+            $ssplan = "SS";
 	    
             $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
             $result = $db -> get_results($sql);
@@ -790,13 +790,13 @@ function subPlan() {
                 $mplan = $val -> Membership_Type;
             echo $mplanap;
 	    }
-/*
+
 		$mplanap = strpos($mplan, $applan);
 		$mplanss = strpos($mplan, $ssplan);
 		
             if ($mplanap !== FALSE) {
                 return '<div class="plandetailodd" id="hcp">
-                    < img src = "Images\happy_maker_2.0.png" class="plan-image" />
+                    <img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Home Coffee Plan<br />
                             <span class="plan-type">'.$mplan.'</span>
@@ -804,7 +804,7 @@ function subPlan() {
                 </div > ';
             } else if (strpos($mplan, $ssplan) !== FALSE) {
                 return '<div class="plan-detail-even" id="obp">
-                    < img src = "Images\happy_maker_2.0.png" class="plan-image" />
+                    <img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Office Buddies Plan
 			<br />
@@ -812,7 +812,7 @@ function subPlan() {
                         </span></div > ';
             	}
 		
-*/
+
 	}
 }
 
