@@ -754,7 +754,7 @@ function basicInfo(){
 			$membername = $val->Name;
 			$memberemail = $val->Email;
             $memberhp = $val -> Contact;
-            $memberaddress = $val->M_Addr1;
+            $memberaddress = $val->M_Addr1.$val->M_Addr2.$val->M_Postcode.$val->M_City.$val->M_State;
 		}
 
 		return '<div id="info">
