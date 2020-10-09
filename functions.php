@@ -789,24 +789,17 @@ function subPlan() {
             foreach($result as $val){
                 $mplan = $val -> Membership_Type;
             }
-		echo $mplan . '<br/>';
-		$mplanap = strpos($mplan, $applan);
-		$mplanss = strpos($mplan, $ssplan);
-		echo $mplan . '<br/>';
-		echo $mplan . '<br/>';
-
-
-
-            if ($mplanap !== FALSE) {
-                return '<div class="plandetailodd" id="hcp">
+		
+            if (strpos($mplan, $applan) !== FALSE) {
+                echo '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Home Coffee Plan<br />
                             <span class="plan-type">'.$mplan.'</span>
                         </span>
                 </div > ';
-            } else if ($mplanss !== FALSE) {
-                return '<div class="plan-detail-even" id="obp">
+            } else if (strpos($mplan, $ssplan) !== FALSE) {
+                echo '<div class="plan-detail-even" id="obp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Office Buddies Plan
