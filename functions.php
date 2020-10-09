@@ -790,11 +790,12 @@ function subPlan() {
                 $mplan = $val -> Membership_Type;
             }
 		echo $mplan;
-	}
-}
+		$mplanap = strpos($mplan, $applan);
+		$mplanss = strpos($mplan, $ssplan);
 
-/*
-            if (stripos($mplan, $applan) !== FALSE) {
+
+
+            if ($mplanap !== FALSE) {
                 return '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
@@ -802,7 +803,7 @@ function subPlan() {
                             <span class="plan-type">'.$mplan.'</span>
                         </span>
                 </div > ';
-            } else if (stripos($mplan, $ssplan) !== FALSE) {
+            } else if ($mplanss !== FALSE) {
                 return '<div class="plan-detail-even" id="obp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
@@ -812,10 +813,10 @@ function subPlan() {
                         </span>
 	</div > ';
             } else {
-                echo "no plan!!!!!"
+                echo "no plan!"
             }
 
         }
 }
 
-*/
+
