@@ -781,8 +781,8 @@ function subPlan() {
             $db = connectDB();
 
             $username = wp_get_current_user() -> user_login;
-	    $applan = "ap"
-            $ssplan = "ss"
+	    $applan = "ap";
+            $ssplan = "ss";
 	    
             $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
             $result = $db -> get_results($sql);
