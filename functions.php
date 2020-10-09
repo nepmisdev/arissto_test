@@ -794,7 +794,7 @@ function subPlan() {
 		$mplanss = strpos($mplan, $ssplan);
 
 
-
+/*
             if ($mplanap !== FALSE) {
                 return '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
@@ -815,7 +815,7 @@ function subPlan() {
             } else {
                 echo "no plan!"
             }
-
+*/
         }
 }
 
