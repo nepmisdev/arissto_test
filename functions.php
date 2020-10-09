@@ -796,7 +796,7 @@ function subPlan() {
 		
             if ($mplanap !== FALSE) {
                 return '<div class="plandetailodd" id="hcp">
-                    <img src = "Images\happy_maker_2.0.png" class="plan-image" />
+                    <img src = "http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Home Coffee Plan<br />
                             <span class="plan-type">'.$mplan.'</span>
