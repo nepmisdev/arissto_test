@@ -804,7 +804,7 @@ function subPlan() {
                 </div > ';
             } else if (strpos($mplan, $ssplan) !== FALSE) {
                 return '<div class="plan-detail-even" id="obp">
-                    <img src = "Images\happy_maker_2.0.png" class="plan-image" />
+                    <img src = "http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Office Buddies Plan
 			<br />
