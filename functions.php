@@ -774,3 +774,39 @@ function basicInfo(){
 		'.$mstate.'</p></div>';
 		}
         }
+add_shortcode('subPlan', 'subPlan');
+function subPlan() {
+        if (is_user_logged_in()) {
+            $db = connectDB();
+
+            $username = wp_get_current_user() -> user_login;
+
+            $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
+            $result = $db -> get_results($sql);
+            foreach($result as $val){
+                $mplan = $val -> Membership_Type;
+                $applan = "ap"
+                $ssplan = "ss"
+            }
+
+            if (stripos($mplan, $applan) !== FALSE) {
+                return '<div class="plandetailodd" id="hcp">
+                    < img src = "Images\happy_maker_2.0.png" class="plan-image" />
+                        <span class="plan-words">
+                            RM1 Home Coffee Plan<br />
+                            <span class="plan-type">'.$mplan.'</span>
+                        </span>
+                </div > ';
+            } else if (stripos($mplan, $ssplan) !== FALSE) {
+                return '<div class="plan-detail-even" id="obp">
+                    < img src = "Images\happy_maker_2.0.png" class="plan-image" />
+                        <span class="plan-words">
+                            RM1 Office Buddies Plan
+			<br />
+                            <span class="plan-type">'.$mplan.'</span>
+                        </span>
+	</div > ';
+            } else {
+                echo "no plan!!!!!"
+            }
+        }
