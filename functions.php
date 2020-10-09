@@ -789,6 +789,7 @@ function subPlan() {
             foreach($result as $val){
                 $mplan = $val -> Membership_Type;
             echo $mplanap;
+	    }
 /*
 		$mplanap = strpos($mplan, $applan);
 		$mplanss = strpos($mplan, $ssplan);
@@ -810,7 +811,7 @@ function subPlan() {
                             <span class="plan-type">'.$mplan.'</span>
                         </span></div > ';
             	}
-		}
+		
 */
 	}
 }
