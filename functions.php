@@ -792,8 +792,8 @@ function subPlan() {
 		$mplanap = strpos($mplan, $applan);
 		$mplanss = strpos($mplan, $ssplan);
 		
-            if ($mplanap !=== FALSE) {
-                echo '<div class="plandetailodd" id="hcp">
+            if ($mplanap !== FALSE) {
+                return '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Home Coffee Plan<br />
@@ -801,7 +801,7 @@ function subPlan() {
                         </span>
                 </div > ';
             } else if (strpos($mplan, $ssplan) !== FALSE) {
-                echo '<div class="plan-detail-even" id="obp">
+                return '<div class="plan-detail-even" id="obp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
                             RM1 Office Buddies Plan
