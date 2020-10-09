@@ -754,7 +754,7 @@ function basicInfo(){
 			$membername = $val->Name;
 			$memberemail = $val->Email;
             $memberhp = $val -> Contact;
-            $memberaddress = $val->M_Addr1;
+            $memberaddress = $val->M_Addr1,', ',M_Addr2,', ',M_Postcode,', ',M_City,', ',M_State;
 		}
 
 		return '<div id="info">
@@ -767,5 +767,4 @@ function basicInfo(){
                 <p class="title">Billing Address</p>
                 <p class="txtdb" id="memberaddress">'.$memberaddress.'</p></div>';
 		}
-	echo "balalalala";
         }
