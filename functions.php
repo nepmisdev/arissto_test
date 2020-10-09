@@ -788,9 +788,11 @@ function subPlan() {
             $result = $db -> get_results($sql);
             foreach($result as $val){
                 $mplan = $val -> Membership_Type;
-            }
+            
+		$mplanap = strpos($mplan, $applan);
+		$mplanss = strpos($mplan, $ssplan);
 		
-            if (strpos($mplan, $applan) !== FALSE) {
+            if ($mplanap !=== FALSE) {
                 echo '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
@@ -805,11 +807,9 @@ function subPlan() {
                             RM1 Office Buddies Plan
 			<br />
                             <span class="plan-type">'.$mplan.'</span>
-                        </span>
-	</div > ';
-            } else {
-            }
-
+                        </span></div > ';
+            	}
+		}
         }
 }
 
