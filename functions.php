@@ -774,22 +774,24 @@ function basicInfo(){
 		'.$mstate.'</p></div>';
 		}
         }
-/*
+
 add_shortcode('subPlan', 'subPlan');
 function subPlan() {
         if (is_user_logged_in()) {
             $db = connectDB();
 
             $username = wp_get_current_user() -> user_login;
-
+	    $applan = "ap"
+            $ssplan = "ss"
+	    
             $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
             $result = $db -> get_results($sql);
             foreach($result as $val){
                 $mplan = $val -> Membership_Type;
-                $applan = "ap"
-                $ssplan = "ss"
             }
-echo $mplan;
+		echo $mplan;
+
+/*
             if (stripos($mplan, $applan) !== FALSE) {
                 return '<div class="plandetailodd" id="hcp">
                     < img src = "Images\happy_maker_2.0.png" class="plan-image" />
@@ -810,7 +812,7 @@ echo $mplan;
             } else {
                 echo "no plan!!!!!"
             }
-	    
+*/
         }
 }
-*/
+
