@@ -802,7 +802,7 @@ function subPlan() {
                             <span class="plan-type">'.$mplan.'</span>
                         </span>
                 </div > ';
-            } else if (strpos($mplan, $ssplan) !== FALSE) {
+            } else if ($mplanss !== FALSE ) {
                 return '<div class="plan-detail-even" id="obp">
                     <img src = "http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image" />
                         <span class="plan-words">
