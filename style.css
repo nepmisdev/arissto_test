@@ -12,7 +12,8 @@ Text Domain:  Avada
     #container{
 	  padding-top: 30px; 
 	  align-items: center;
-	  width: 100%;
+	  width: 90%;
+	  margin: 0px;
 	  background-color: lightgreen;
 	}
 }
