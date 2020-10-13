@@ -167,9 +167,9 @@ button.btnB{
 
         .plan-image {
             height:100%;
-	    width:25%;
+	    width:33%;
             border-radius: 20px;
-            margin: 0 10px 0 0;
+            margin: auto 10px auto 0;
             vertical-align: middle;
             float:left;
         }
