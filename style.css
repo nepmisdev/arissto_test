@@ -176,13 +176,16 @@ button.btnB{
         }
 
         .plan-image {
-<<<<<<< HEAD
-            min-width: 25%;
+/*<<<<<<< HEAD
+            
 =======
-            height:100%;
-	    width:33%;
+            
 >>>>>>> 9e2dfd04bacbc85548f138eee00d7a001d3505c9
-            border-radius: 20px;
+*/
+	    height:100%;
+	    min-width: 25%;
+	    width:33%;
+	    border-radius: 20px;
             margin: auto 10px auto 0;
             vertical-align: middle;
             float:left;
