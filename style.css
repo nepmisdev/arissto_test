@@ -95,6 +95,7 @@ button.btnB{
             margin: 0 10px 0 0;
             vertical-align: middle;
             width: 25%;
+            float:left;
         }
 
         .plan-words {
