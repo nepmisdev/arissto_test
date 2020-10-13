@@ -15,6 +15,7 @@ Text Domain:  Avada
 	  width: 100%;
 	  background-color: lightgreen;
 	}
+<<<<<<< HEAD
 	
 	.avatar{
 		width: 30%; 
@@ -25,6 +26,8 @@ Text Domain:  Avada
 		background-size: cover; 
 		background-position: center;
 	}
+=======
+>>>>>>> 9e2dfd04bacbc85548f138eee00d7a001d3505c9
 }
 
 @media (max-width: 767px) {
@@ -89,8 +92,13 @@ Text Domain:  Avada
 	}
 	
 	.avatar{
+<<<<<<< HEAD
 		width: 200px; 
 		height: 200px; 
+=======
+		width: 30%; 
+		height: 30%; 
+>>>>>>> 9e2dfd04bacbc85548f138eee00d7a001d3505c9
 		border-radius: 50%; 
 		border: 2px solid #AC1A2F; 
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
@@ -176,9 +184,14 @@ button.btnB{
         }
 
         .plan-image {
+<<<<<<< HEAD
             min-width: 25%;
+=======
+            height:100%;
+	    width:33%;
+>>>>>>> 9e2dfd04bacbc85548f138eee00d7a001d3505c9
             border-radius: 20px;
-            margin: 0 10px 0 0;
+            margin: auto 10px auto 0;
             vertical-align: middle;
             float:left;
         }
