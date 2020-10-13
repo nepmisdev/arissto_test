@@ -18,7 +18,7 @@ Text Domain:  Avada
 	
 	.avatar{
 		width: 30%; 
-		height: 30%; 
+		height: auto; 
 		border-radius: 50%; 
 		border: 2px solid #AC1A2F; 
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
@@ -36,7 +36,7 @@ Text Domain:  Avada
 	
 	.avatar{
 		width: 30%; 
-		height: 30%; 
+		height: auto; 
 		border-radius: 50%; 
 		border: 2px solid #AC1A2F; 
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
@@ -54,7 +54,7 @@ Text Domain:  Avada
 	
 	.avatar{
 		width: 30%; 
-		height: 30%; 
+		height: auto; 
 		border-radius: 50%; 
 		border: 2px solid #AC1A2F; 
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
@@ -72,7 +72,7 @@ Text Domain:  Avada
 	
 	.avatar{
 		width: 30%; 
-		height: 30%; 
+		height: auto; 
 		border-radius: 50%; 
 		border: 2px solid #AC1A2F; 
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
