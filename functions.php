@@ -760,7 +760,7 @@ function basicInfo(){
 	    $mstate = $val->M_State;
 		}
 
-		return '<div id="info">
+		return '
                 <p class="title">Name</p>
                 <p class="txtdb" id="membername">'.$membername.'</p>
                 <p class="title">Email:</p>
@@ -771,7 +771,7 @@ function basicInfo(){
                 <p class="txtdb" id="memberaddress">'.$maddress1.'<br \>
 		'.$maddress2.'<br \>
 		'.$mpcode.'<br \>
-		'.$mstate.'</p></div>';
+		'.$mstate.'</p>';
 		}
         }
 
