@@ -8,7 +8,7 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-@media only screen and (max-width: 641px) {
+@media only screen and (max-device-width: 641px) {
     #container{
 	  padding-top: 30px; 
 	  align-items: center;
