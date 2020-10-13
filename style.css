@@ -195,7 +195,7 @@ button.btnB{
             color: #ab1a2d;
             margin: auto auto auto 10px;
             float: left;
-	    font-size: 16px;
+	    font-size: 20px;
         }
 
         .heading {
@@ -365,7 +365,7 @@ button.btnB{
 
         .plan-type {
             color: black;
-	    font-size:12px;
+	    font-size:16px;
         }
 
         .details{
@@ -379,6 +379,6 @@ button.btnB{
 	    font-size:12px;
         }
         .planNoti{
-            font-size:12px;
+            font-size:16px;
             color:black;
         }
