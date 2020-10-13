@@ -8,8 +8,8 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-@media only screen and (max-width: 641px) {
-    .container{
+@media (max-width: 641px) {
+    #container{
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
@@ -18,7 +18,7 @@ Text Domain:  Avada
 }
 
 @media (max-width: 767px) {
-    .container{
+    #container{
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
@@ -27,7 +27,7 @@ Text Domain:  Avada
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
-    .container{
+    #container{
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
@@ -36,7 +36,7 @@ Text Domain:  Avada
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .container{
+    #container{
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 50%;
@@ -45,7 +45,7 @@ Text Domain:  Avada
 }
 
 @media (min-width: 1200px) {
-    .container{
+    #container{
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 50%;
@@ -57,7 +57,7 @@ Text Domain:  Avada
   direction: rtl;
 }
 
-.container .star-widget input{
+.star-widget input{
   display: none;
 }
 
