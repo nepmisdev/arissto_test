@@ -16,16 +16,6 @@ Text Domain:  Avada
 	  margin: 0px;
 	  background-color: lightgreen;
 	}
-	
-	.avatar{
-		width: 30%; 
-		height: 30%; 
-		border-radius: 50%; 
-		border: 2px solid #AC1A2F; 
-		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
-		background-size: cover; 
-		background-position: center;
-	}
 }
 
 @media (max-width: 767px) {
@@ -33,16 +23,6 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
-	}
-	
-	.avatar{
-		width: 30%; 
-		height: 30%; 
-		border-radius: 50%; 
-		border: 2px solid #AC1A2F; 
-		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
-		background-size: cover; 
-		background-position: center;
 	}
 }
 
@@ -52,16 +32,6 @@ Text Domain:  Avada
 	  align-items: center;
 	  width: 80%;
 	}
-	
-	.avatar{
-		width: 30%; 
-		height: 30%; 
-		border-radius: 50%; 
-		border: 2px solid #AC1A2F; 
-		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
-		background-size: cover; 
-		background-position: center;
-	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -70,16 +40,6 @@ Text Domain:  Avada
 	  align-items: center;
 	  width: 50%;
 	}
-	
-	.avatar{
-		width: 30%; 
-		height: 30%; 
-		border-radius: 50%; 
-		border: 2px solid #AC1A2F; 
-		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
-		background-size: cover; 
-		background-position: center;
-	}
 }
 
 @media (min-width: 1200px) {
@@ -87,16 +47,6 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 50%;
-	}
-	
-	.avatar{
-		width: 30%; 
-		height: 30%; 
-		border-radius: 50%; 
-		border: 2px solid #AC1A2F; 
-		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
-		background-size: cover; 
-		background-position: center;
 	}
 }
 
@@ -301,6 +251,7 @@ button.btnB{
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+	    background-color: #ab1a2d;
         }
 
         .glyphicon {
