@@ -193,7 +193,7 @@ button.btnB{
 
         .plan-words {
             color: #ab1a2d;
-            margin: auto auto auto 10px;
+            margin: auto 10px auto 10px;
             float: left;
 	    font-size: 20px;
         }
@@ -379,6 +379,6 @@ button.btnB{
 	    font-size:12px;
         }
         .planNoti{
-            font-size:16px;
+            font-size:14px;
             color:black;
         }
