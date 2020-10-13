@@ -8,9 +8,43 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-div.container{
-  padding-top: 30px; 
-  align-items: center;
+@media only screen and (max-width: 641px) {
+    .gform_wrapper .ginput_container span:not(.ginput_price) {
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 80%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 80%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+    .container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 50%;
+	}
 }
 
 .star-widget{
