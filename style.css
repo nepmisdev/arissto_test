@@ -137,7 +137,7 @@ button.btnB{
         }
 
         .plan-image {
-            min-height: 100%;
+            min-width: 25%;
             border-radius: 20px;
             margin: 0 10px 0 0;
             vertical-align: middle;
