@@ -8,16 +8,102 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-div.container{
-  padding-top: 30px; 
-  align-items: center;
+@media only screen and (max-device-width: 641px) {
+    #container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 100%;
+	  background-color: lightgreen;
+	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
+}
+
+@media (max-width: 767px) {
+    #container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 80%;
+	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    #container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 80%;
+	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 50%;
+	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
+}
+
+@media (min-width: 1200px) {
+    #container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 50%;
+	}
+	
+	.avatar{
+		width: 200px; 
+		height: 200px; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
 }
 
 .star-widget{
   direction: rtl;
 }
 
-.container .star-widget input{
+.star-widget input{
   display: none;
 }
 
@@ -90,17 +176,18 @@ button.btnB{
         }
 
         .plan-image {
-            height: 100%;
+            min-width: 25%;
             border-radius: 20px;
             margin: 0 10px 0 0;
             vertical-align: middle;
-            width: 25%;
+            float:left;
         }
 
         .plan-words {
             color: #ab1a2d;
             margin: auto auto auto 10px;
             float: left;
+	    font-size: 12px;
         }
 
         .heading {
@@ -213,6 +300,7 @@ button.btnB{
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+	    background-color: #ab1a2d;
         }
 
         .glyphicon {
@@ -269,5 +357,20 @@ button.btnB{
 
         .plan-type {
             color: black;
+	    font-size:10px;
         }
 
+        .details{
+            color:white;
+            background-color:#ab1a2d;
+            border-radius:25px;
+            padding:10px;
+            text-align:center;
+            margin:30px auto auto auto;
+            text-decoration:none;
+	    font-size:12px;
+        }
+        .planNoti{
+            font-size:10px;
+            color:black;
+        }
