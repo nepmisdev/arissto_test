@@ -9,10 +9,11 @@ Text Domain:  Avada
 */
 
 @media only screen and (max-width: 641px) {
-    .gform_wrapper .ginput_container span:not(.ginput_price) {
-        margin-bottom: 8px;
-        display: inline-block;
-    }
+    .container{
+	  padding-top: 30px; 
+	  align-items: center;
+	  width: 80%;
+	}
 }
 
 @media (max-width: 767px) {
