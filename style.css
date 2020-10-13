@@ -100,16 +100,6 @@ Text Domain:  Avada
 	}
 }
 
-.avatar{
-	width: 200px; 
-	height: 200px; 
-	border-radius: 50%; 
-	border: 2px solid #AC1A2F; 
-	background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
-	background-size: cover; 
-	background-position: center;
-}
-
 .star-widget{
   direction: rtl;
 }
