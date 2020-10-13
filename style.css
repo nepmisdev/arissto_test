@@ -195,13 +195,13 @@ button.btnB{
             color: #ab1a2d;
             margin: auto auto auto 10px;
             float: left;
-	    font-size: 12px;
+	    font-size: 16px;
         }
 
         .heading {
             margin-top: 20px;
             color: #ab1a2d;
-            padding: 10px;
+            padding: 12px;
         }
 
         .dropbtn {
@@ -365,7 +365,7 @@ button.btnB{
 
         .plan-type {
             color: black;
-	    font-size:10px;
+	    font-size:12px;
         }
 
         .details{
@@ -379,6 +379,6 @@ button.btnB{
 	    font-size:12px;
         }
         .planNoti{
-            font-size:10px;
+            font-size:12px;
             color:black;
         }
