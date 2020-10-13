@@ -307,3 +307,16 @@ button.btnB{
             color: black;
         }
 
+        .details{
+            color:white;
+            background-color:#ab1a2d;
+            border-radius:25px;
+            padding:10px;
+            text-align:center;
+            margin:30px auto auto auto;
+            text-decoration:none;
+        }
+        .planNoti{
+            font-size:13px;
+            color:black;
+        }
