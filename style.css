@@ -8,11 +8,12 @@ Version: 1.0.0
 Text Domain:  Avada
 */
 
-@media (max-width: 641px) {
+@media only screen and (max-width: 641px) {
     #container{
 	  padding-top: 30px; 
 	  align-items: center;
-	  width: 90%;
+	  width: 100%;
+	  background-color: lightgreen;
 	}
 }
 
