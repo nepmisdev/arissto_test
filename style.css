@@ -12,8 +12,7 @@ Text Domain:  Avada
     #container{
 	  padding-top: 30px; 
 	  align-items: center;
-	  width: 80%;
-	  background-color: lightblue;
+	  width: 90%;
 	}
 }
 
@@ -22,7 +21,6 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
-	  background-color: pink;
 	}
 }
 
@@ -31,7 +29,6 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
-	  background-color: yellow;
 	}
 }
 
@@ -40,7 +37,6 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 50%;
-	  background-color: lightblue;
 	}
 }
 
@@ -49,8 +45,17 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 50%;
-	  background-color: purple;
 	}
+}
+
+.avatar{
+	width: 200px; 
+	height: 200px; 
+	border-radius: 50%; 
+	border: 2px solid #AC1A2F; 
+	background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+	background-size: cover; 
+	background-position: center;
 }
 
 .star-widget{
