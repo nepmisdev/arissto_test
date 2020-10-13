@@ -130,7 +130,7 @@ button.btnB{
         }
 
         .plan-image {
-            height: 100%;
+            min-height: 100%;
             border-radius: 20px;
             margin: 0 10px 0 0;
             vertical-align: middle;
@@ -141,6 +141,7 @@ button.btnB{
             color: #ab1a2d;
             margin: auto auto auto 10px;
             float: left;
+	    font-size: 12px;
         }
 
         .heading {
@@ -309,6 +310,7 @@ button.btnB{
 
         .plan-type {
             color: black;
+	    font-size:10px;
         }
 
         .details{
@@ -319,8 +321,9 @@ button.btnB{
             text-align:center;
             margin:30px auto auto auto;
             text-decoration:none;
+	    font-size:12px;
         }
         .planNoti{
-            font-size:13px;
+            font-size:10px;
             color:black;
         }
