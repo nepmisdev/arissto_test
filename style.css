@@ -12,8 +12,7 @@ Text Domain:  Avada
     #container{
 	  padding-top: 30px; 
 	  align-items: center;
-	  width: 90%;
-	  margin: 0px;
+	  width: 100%;
 	  background-color: lightgreen;
 	}
 }
@@ -24,6 +23,16 @@ Text Domain:  Avada
 	  align-items: center;
 	  width: 80%;
 	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -31,6 +40,16 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 80%;
+	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
 	}
 }
 
@@ -40,6 +59,16 @@ Text Domain:  Avada
 	  align-items: center;
 	  width: 50%;
 	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -47,6 +76,16 @@ Text Domain:  Avada
 	  padding-top: 30px; 
 	  align-items: center;
 	  width: 50%;
+	}
+	
+	.avatar{
+		width: 30%; 
+		height: 30%; 
+		border-radius: 50%; 
+		border: 2px solid #AC1A2F; 
+		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
+		background-size: cover; 
+		background-position: center;
 	}
 }
 
