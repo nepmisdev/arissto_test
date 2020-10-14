@@ -757,7 +757,7 @@ function basicInfo(){
             $memberhp = $val -> Contact;
             $maddress1 = $val->M_Addr1;
 	    $maddress2 = $val->M_Addr2;
-	    $mpcode = $val->M_Postcode.' '.$val->M_City;
+	    $mpcode = $val->M_Postcode."&nbsp".$val->M_City;
 	    $mstate = $val->M_State;
 		}
 
