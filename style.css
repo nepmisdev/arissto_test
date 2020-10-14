@@ -272,16 +272,16 @@ button.btnB{
             font-weight: 600;
         }
 
-        input {
+        edit-info input {
             border: 1px solid #ab1a2d;
-            width: 95%;
+            width: 100%;
             padding: 10px;
             border-radius: 10px;
         }
 
         textarea {
             border: 1px solid #ab1a2d;
-            width: 95%;
+            width: 100%;
             padding: 10px;
             border-radius: 10px;
             margin: 5px 0;
