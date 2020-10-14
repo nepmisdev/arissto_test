@@ -796,7 +796,7 @@ function subPlan() {
 		
 		$mplanap = strpos($mplan, $applan);
 		$mplanss = strpos($mplan, $ssplan);
-		
+		/* 
 		if(!empty($array)) { 
 		foreach($array as $data) {
 ?>
@@ -808,7 +808,8 @@ function subPlan() {
         </span>
     </div>
 <?php
-/*            if ($mplanap !== FALSE) {
+*/
+           if ($mplanap !== FALSE) {
                 return '<div class="plan-detail-odd">
         <img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image"/>
         <span class="plan-words">
@@ -824,7 +825,7 @@ function subPlan() {
             <span class="plan-type">'.$mplan.'</span><br />
         </span>
     </div>';
-	    }*/
+	    }
 	}
 }
 
