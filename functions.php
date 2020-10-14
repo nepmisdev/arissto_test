@@ -790,8 +790,8 @@ function subPlan() {
             foreach($result as $val){
                 $mplan = $val -> Membership_Type;
 		    
-		$array[] = array(
-			"Membership_Type" => $mplan);
+		//$array[] = array(
+		//	"Membership_Type" => $mplan);
             	} 
 		
 		$mplanap = strpos($mplan, $applan);
