@@ -333,7 +333,7 @@ button.btnB{
             border-radius: 40px;
             color: #ab1a2d;
             background-color: rgb(246,232,234);
-            padding: 3px 20px;
+            padding: 0 20px;
             border: 1px solid transparent;
             font-size: 14px;
         }
