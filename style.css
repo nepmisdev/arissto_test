@@ -346,6 +346,7 @@ button.btnB{
             padding: 5px 0;
             border: 1px solid #ab1a2d;
             font-size: 14px;
+	    border-radius: 40px;
         }
 
         #btnCancel {
@@ -357,6 +358,7 @@ button.btnB{
             padding: 5px 0;
             border: 1px solid #ab1a2d;
             font-size: 14px;
+	    border-radius: 40px;
         }
 
         .txtdb {
