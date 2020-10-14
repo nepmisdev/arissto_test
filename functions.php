@@ -802,8 +802,8 @@ function subPlan() {
             <span class="plan-type">'.$mplan.'</span><br />
         </span>
     </div>';
-            } 
-		if ($mplanss !== FALSE ) {
+            } else {}
+	    if ($mplanss !== FALSE ) {
                 return '<div class="plan-detail-even">
         <img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image" />
         <span class="plan-words">
@@ -811,8 +811,7 @@ function subPlan() {
             <span class="plan-type">'.$mplan.'</span><br />
         </span>
     </div>';
-            	}
-		
+            	} else {}
 
 	}
 }
