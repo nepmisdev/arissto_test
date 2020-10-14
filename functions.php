@@ -741,6 +741,7 @@ function test(){
 	echo "Hello World!";
 	echo "testing";
 }
+
 add_shortcode( 'basicInfo','basicInfo' );
 function basicInfo(){
 	if ( is_user_logged_in() ) {
@@ -788,13 +789,26 @@ function subPlan() {
             $result = $db -> get_results($sql);
             foreach($result as $val){
                 $mplan = $val -> Membership_Type;
-            
-	   
-
+		    
+		$array[] = array(
+			"Membership_Type" => $mplan);
+            	} 
+		
 		$mplanap = strpos($mplan, $applan);
 		$mplanss = strpos($mplan, $ssplan);
 		
-            if ($mplanap !== FALSE) {
+		if(!empty($array)) { 
+		foreach($array as $data) {
+?>
+		<div class="plan-detail-odd">
+        <img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image"/>
+        <span class="plan-words">
+            RM1 Home Coffee Plan<br />
+            <span class="plan-type"><?php echo $data['Membership_Type']; ?></span><br />
+        </span>
+    </div>
+<?php
+/*            if ($mplanap !== FALSE) {
                 return '<div class="plan-detail-odd">
         <img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image"/>
         <span class="plan-words">
@@ -810,8 +824,7 @@ function subPlan() {
             <span class="plan-type">'.$mplan.'</span><br />
         </span>
     </div>';
-            	} 
-	    }
+	    }*/
 	}
 }
 
