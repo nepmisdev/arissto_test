@@ -258,7 +258,7 @@ button.btnB{
             border-radius: 15px;
         }
 
-        #edit-info {
+        #edit-info, #edit-pass {
             padding: 10px 15px 15px 15px;
             border-radius: 15px;
             display: none;
@@ -272,7 +272,7 @@ button.btnB{
             font-weight: 600;
         }
 
-        edit-info input {
+        edit-info input, edit-pass input {
             border: 1px solid #ab1a2d;
             width: 100%;
             padding: 10px;
@@ -327,7 +327,7 @@ button.btnB{
             content: "\270e";
         }
 
-        #btnEdit {
+        #btnEdit, #btnC_Pass {
             float: right;
             border: none;
             border-radius: 40px;
@@ -338,7 +338,7 @@ button.btnB{
             font-size: 16px;
         }
 
-        #btnSave {
+        #btnSave, #btnSPass {
             margin: 10px 0 0 0;
             width: 40%;
             background-color: #ab1a2d;
@@ -349,7 +349,7 @@ button.btnB{
 	    border-radius: 40px;
         }
 
-        #btnCancel {
+        #btnCancel, #btnCPass {
             margin: 10px 0 0 0;
             width: 40%;
             float: right;
