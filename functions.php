@@ -746,61 +746,56 @@ add_shortcode( 'basicInfo','basicInfo' );
 function basicInfo(){
 	if ( is_user_logged_in() ) {
 		$db = connectDB();
-		
 		$username = wp_get_current_user()->user_login;
-		
 		$sql = "SELECT Name, Email, Contact, M_Addr1, M_Addr2, M_City, M_State, M_Postcode FROM ct_myaccount_flutter WHERE Email = '".$username."'";
 		$result = $db->get_results($sql);
 		foreach($result as $val){
 			$membername = $val->Name;
 			$memberemail = $val->Email;
-            $memberhp = $val -> Contact;
-            $maddress1 = $val->M_Addr1;
-	    $maddress2 = $val->M_Addr2;
-	    $mpcode = $val->M_Postcode."&nbsp".$val->M_City;
-	    $mstate = $val->M_State;
+			$memberhp = $val -> Contact;
+			$maddress1 = $val->M_Addr1;
+			$maddress2 = $val->M_Addr2;
+			$mpcode = $val->M_Postcode."&nbsp".$val->M_City;
+			$mstate = $val->M_State;
 		}
-
 		return '
-                <p class="title">Name</p>
-                <p class="txtdb" id="membername">'.$membername.'</p>
-                <p class="title">Email:</p>
-                <p class="txtdb" id="memberemail">'.$memberemail.'</p>
-                <p class="title">Contact Number:</p>
-                <p class="txtdb" id="memberhp">'.$memberhp.'</p>
-                <p class="title">Billing Address</p>
-                <p class="txtdb" id="memberaddress">'.$maddress1.'<br \>
-		'.$maddress2.'<br \>
-		'.$mpcode.'<br \>
-		'.$mstate.'</p>';
-		}
-        }
+			<p class="title">Name</p>
+			<p class="txtdb" id="membername">'.$membername.'</p>
+			<p class="title">Email:</p>
+			<p class="txtdb" id="memberemail">'.$memberemail.'</p>
+			<p class="title">Contact Number:</p>
+			<p class="txtdb" id="memberhp">'.$memberhp.'</p>
+			<p class="title">Billing Address</p>
+			<p class="txtdb" id="memberaddress">'.$maddress1.'<br \>
+			'.$maddress2.'<br \>
+			'.$mpcode.'<br \>
+			'.$mstate.'</p>';
+	}
+}
 
 add_shortcode('subPlan', 'subPlan');
 function subPlan() {
-        if (is_user_logged_in()) {
-            $db = connectDB();
-
-            $username = wp_get_current_user() -> user_login;
-	    $applan = "AP";
-            $ssplan = "SS";
-	    
-            $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
-            $result = $db -> get_results($sql);
-            foreach($result as $val){
-                $mplan = $val -> Membership_Type;
-		    
-		$array[] = array(
-			"Membership_Type" => $mplan);
-            } 
+	$applan = "AP";
+	$ssplan = "SS";
+	if (is_user_logged_in()) {
+		$db = connectDB();
+		$username = wp_get_current_user() -> user_login;
+		$sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
+		$result = $db -> get_results($sql);
+		foreach($result as $val){
+			$Membership_Type = $val -> Membership_Type;
+			echo $Membership_Type;
+			//$array[] = array(
+				//"Membership_Type" => $Membership_Type);
+		}
 		
 		//$mplanap = strpos($mplan, $applan);
 		//$mplanss = strpos($mplan, $ssplan);
 		
-		if(!empty($array)) { 
+/*		if(!empty($array)) { 
 			foreach($array as $data) {
 			echo $data['Membership_Type'];
-/*				if ($mplanap !== FALSE) { ?>
+				if ($mplanap !== FALSE) { ?>
                 	<div class="plan-detail-odd">
         <img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image"/>
         <span class="plan-words">RM1 Home Coffee Plan<br /><span class="plan-type"><?php
@@ -812,8 +807,9 @@ function subPlan() {
 	<span class="plan-words">RM1 Office Buddies Plan<br /><span class="plan-type"><?php
 		echo $data['Membership_Type'];
 		?></span><br /></span></div>'; <?php
-*/	    }
+	    }
 	}
 }
 
 
+*/
