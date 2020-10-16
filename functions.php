@@ -792,10 +792,10 @@ function subPlan() {
 		    
 		$array[] = array(
 			"Membership_Type" => $mplan);
-            	} 
+            } 
 		
-		$mplanap = strpos($mplan, $applan);
-		$mplanss = strpos($mplan, $ssplan);
+		//$mplanap = strpos($mplan, $applan);
+		//$mplanss = strpos($mplan, $ssplan);
 		
 		if(!empty($array)) { 
 			foreach($array as $data) {
