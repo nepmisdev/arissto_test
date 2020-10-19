@@ -792,16 +792,16 @@ function subPlan() {
 			<div class="plan-detail-odd">
 			<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
 			<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">
-			<?php echo $data['Membership_Type']; ?>
+			<?php echo $data['Membership_Type'];} ?>
 			</span><br/></span></div>
-		<?php } else if (strpos($Membership_Type, $ssplan) !== FALSE ) {?>
+		<?php  else if (strpos($Membership_Type, $ssplan) !== FALSE ) {?>
 			<div class="plan-detail-even">
         		<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
 			<span class="plan-words">RM1 Office Buddies Plan<br /><span class="plan-type"><?php
-			echo $data['Membership_Type'];
+			echo $data['Membership_Type'];} 
 			?></span><br /></span></div><?php
 			
-	    	} else echo "123";
+	    	else echo "123";
 		}
 	}
 }
