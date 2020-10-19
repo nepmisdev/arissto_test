@@ -800,7 +800,6 @@ function subPlan() {
 			<span class="plan-words">RM1 Office Buddies Plan<br/><span class="plan-type"><?php
 			echo $data['Membership_Type'];
 			?></span><br /></span></div><?php
-			
 	    	} //else echo "123";
 		}
 	}
