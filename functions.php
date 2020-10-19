@@ -773,7 +773,7 @@ function basicInfo(){
 	}
 }
 
-add_shortcode('subPlan', 'subPlan');
+/*add_shortcode('subPlan', 'subPlan');
 function subPlan() {
 	$applan = "AP";
 	$ssplan = "SS";
@@ -792,7 +792,7 @@ function subPlan() {
 		//$mplanap = strpos($mplan, $applan);
 		//$mplanss = strpos($mplan, $ssplan);
 		
-/*		if(!empty($array)) { 
+		if(!empty($array)) { 
 			foreach($array as $data) {
 			echo $data['Membership_Type'];
 				if ($mplanap !== FALSE) { ?>
