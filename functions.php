@@ -772,42 +772,36 @@ function basicInfo(){
 	}
 }
 
-/*add_shortcode('subPlan', 'subPlan');
+add_shortcode('subPlan', 'subPlan');
 function subPlan() {
-	$applan = "AP";
-	$ssplan = "SS";
-	if (is_user_logged_in()) {
-		$db = connectDB();
-		$username = wp_get_current_user() -> user_login;
-		$sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
-		$result = $db -> get_results($sql);
-		foreach($result as $val){
-			$Membership_Type = $val -> Membership_Type;
-			echo $Membership_Type;
-			//$array[] = array(
-				//"Membership_Type" => $Membership_Type);
+    $applan = "AP";
+    $ssplan = "SS";
+    if (is_user_logged_in()) {
+        $db = connectDB();
+        $username = wp_get_current_user() -> user_login;
+        $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
+        $result = $db -> get_results($sql);
+            foreach($result as $val){
+                $Membership_Type = $val->Membership_Type;
+		$array[] = array("Membership_Type" => $Membership_Type);
 		}
-		
-		//$mplanap = strpos($mplan, $applan);
-		//$mplanss = strpos($mplan, $ssplan);
 		
 		if(!empty($array)) { 
 			foreach($array as $data) {
+			if (strpos($mplan, $applan) !== FALSE) {?>
+			<div class="plan-detail-odd">
+			<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image"/>
+			<span class="plan-words">RM1 Home Coffee Plan<br /><span class="plan-type">
+			<?php echo $data['Membership_Type']; ?>
+			</span><br /></span></div>';
+            	<?php } else if (strpos($mplan, $ssplan) !== FALSE ) {?>
+			<div class="plan-detail-even">
+        		<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
+			<span class="plan-words">RM1 Office Buddies Plan<br /><span class="plan-type"><?php
 			echo $data['Membership_Type'];
-				if ($mplanap !== FALSE) { ?>
-                	<div class="plan-detail-odd">
-        <img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png" class="plan-image"/>
-        <span class="plan-words">RM1 Home Coffee Plan<br /><span class="plan-type"><?php
-		echo $data['Membership_Type'];
-		?></span><br /></span></div>'; <?php
-            } else if ($mplanss !== FALSE ) { ?>
-                <div class="plan-detail-even">
-        <img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
-	<span class="plan-words">RM1 Office Buddies Plan<br /><span class="plan-type"><?php
-		echo $data['Membership_Type'];
-		?></span><br /></span></div>'; <?php
-	    }
-	}
+			?></span><br /></span></div><?php
+	    	}
+    }
 }
 
 
