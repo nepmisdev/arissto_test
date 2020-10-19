@@ -801,6 +801,8 @@ function subPlan() {
 			echo $data['Membership_Type'];
 			?></span><br /></span></div><?php
 	    	}
-    }
+		}
+	}
+}
 }
 ?>
