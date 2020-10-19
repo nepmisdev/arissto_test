@@ -758,8 +758,7 @@ function basicInfo(){
 			$mpcode = $val->M_Postcode."&nbsp".$val->M_City;
 			$mstate = $val->M_State;
 		}
-		return '
-			<p class="title">Name</p>
+		return '<p class="title">Name</p>
 			<p class="txtdb" id="membername">'.$membername.'</p>
 			<p class="title">Email:</p>
 			<p class="txtdb" id="memberemail">'.$memberemail.'</p>
@@ -812,4 +811,4 @@ function subPlan() {
 }
 
 
-*/
+
