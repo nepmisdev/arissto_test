@@ -786,7 +786,7 @@ function subPlan() {
 		
 		if(!empty($array)) {
 			foreach($array as $data) {
-				echo "1 ".$data['Membership_Type']."<br>";
+				//echo "1 ".$data['Membership_Type']."<br>";
 				if (stripos($data['Membership_Type'], "AP") !== FALSE) {
 					//echo "AP ".$data['Membership_Type']."<br>";
 					echo "<div class='plan-detail-odd'>
@@ -797,7 +797,7 @@ function subPlan() {
 				} elseif (stripos($data['Membership_Type'],"SS") !== FALSE) {
 					//echo "SS ".$data['Membership_Type']."<br>";
 					echo "<div class='plan-detail-even'>
-					<img src='http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png' class='plan-image'/>
+					<img src='http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png'class='plan-image'/>
 					<span class='plan-words'>RM1 Office Buddies Plan<br/><span class='plan-type'>"
 					.$data['Membership_Type'].
 					"</span><br/></span></div>";
