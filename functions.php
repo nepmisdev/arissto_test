@@ -791,7 +791,7 @@ function subPlan() {
 				echo "1".$data['Membership_Type']."<br>";
 				switch (true) {
 					case stripos($Membership_Type,$applan) >= 0:
-						echo $Membership_Type;
+						echo "AP".$data['Membership_Type']."<br>";
 						/*return '<div class="plan-detail-odd">
 							<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
 							<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">
@@ -799,7 +799,7 @@ function subPlan() {
 							</span><br/></span></div>';*/
 					break;
 					case stripos($Membership_Type,$ssplan) >= 0:
-						echo $Membership_Type;
+						echo "SS".$data['Membership_Type']."<br>";
 						/*return '<div class="plan-detail-even">
 							<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
 							<span class="plan-words">RM1 Office Buddies Plan<br/><span class="plan-type">
