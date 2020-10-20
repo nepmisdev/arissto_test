@@ -25,6 +25,9 @@ Text Domain:  Avada
 		background-size: cover; 
 		background-position: center;
 	}
+	#btnEdit, #btnC_Pass {
+		font-size:16px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -42,6 +45,9 @@ Text Domain:  Avada
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
 		background-size: cover; 
 		background-position: center;
+	}
+	#btnEdit, #btnC_Pass {
+		font-size:16px;
 	}
 }
 
@@ -61,6 +67,9 @@ Text Domain:  Avada
 		background-size: cover; 
 		background-position: center;
 	}
+	#btnEdit, #btnC_Pass {
+		font-size:16px;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -79,6 +88,9 @@ Text Domain:  Avada
 		background-size: cover; 
 		background-position: center;
 	}
+	#btnEdit, #btnC_Pass {
+		font-size:20px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -96,6 +108,9 @@ Text Domain:  Avada
 		background-image: url('http://arissto.com/test/wp-content/uploads/2020/09/person.jpeg'); 
 		background-size: cover; 
 		background-position: center;
+	}
+	#btnEdit, #btnC_Pass {
+		font-size:20px;
 	}
 }
 
