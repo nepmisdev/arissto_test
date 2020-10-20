@@ -774,50 +774,35 @@ function basicInfo(){
 
 add_shortcode('subPlan', 'subPlan');
 function subPlan() {
-    $applan = "AP";
-    $ssplan = "SS";
-    if (is_user_logged_in()) {
-        $db = connectDB();
-        $username = wp_get_current_user() -> user_login;
-        $sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
-        $result = $db -> get_results($sql);
-            foreach($result as $val){
-                $Membership_Type = $val->Membership_Type;
-		$array[] = array("Membership_Type" => $Membership_Type);
+	if (is_user_logged_in()) {
+		$db = connectDB();
+		$username = wp_get_current_user() -> user_login;
+		$sql = "SELECT Membership_Type FROM ct_myaccount_flutter WHERE Email = '".$username."'";
+		$result = $db -> get_results($sql);
+		foreach($result as $val){
+			$Membership_Type = $val->Membership_Type;
+			$array[] = array("Membership_Type" => $Membership_Type);
 		}
 		
 		if(!empty($array)) {
 			foreach($array as $data) {
 				if (stripos($data['Membership_Type'], "AP") !== FALSE) {
-						//echo "AP".$data['Membership_Type']."<br>";
-						return '<div class="plan-detail-odd">
-							<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
-							<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">
-							<?php echo $data['Membership_Type']; ?>
-							</span><br/></span></div>';
+					//echo "AP".$data['Membership_Type']."<br>";
+					return '<div class="plan-detail-odd">
+					<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
+					<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">'
+					.$data['Membership_Type'].
+					'</span><br/></span></div>';
 				} elseif (stripos($data['Membership_Type'],"SS") !== FALSE) {
-						//echo "SS".$data['Membership_Type']."<br>";
-						return '<div class="plan-detail-even">
-							<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
-							<span class="plan-words">RM1 Office Buddies Plan<br/><span class="plan-type">
-							<?php echo $data['Membership_Type']; ?>
-							</span><br/></span></div>';
+					//echo "SS".$data['Membership_Type']."<br>";
+					return '<div class="plan-detail-even">
+					<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
+					<span class="plan-words">RM1 Office Buddies Plan<br/><span class="plan-type">'
+					.$data['Membership_Type'].
+					'</span><br/></span></div>';
 				}
-			/*if (strpos($Membership_Type, $applan) !== FALSE) { ?>
-			<div class="plan-detail-odd">
-			<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
-			<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">
-			<?php echo $data['Membership_Type']; ?>
-			</span><br/></span></div>
-			<?php } elseif (strpos($Membership_Type, $ssplan) !== FALSE) {?>
-			<div class="plan-detail-even">
-        		<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
-			<span class="plan-words">RM1 Office Buddies Plan<br/><span class="plan-type"><?php
-			echo $data['Membership_Type'];
-			?></span><br /></span></div><?php
-	    		} //else echo "123";*/
 			}
 		}
-    }
+	}
 }
 ?>
