@@ -783,7 +783,7 @@ function subPlan() {
 			$Membership_Type = $val->Membership_Type;
 			$array[] = array("Membership_Type" => $Membership_Type);
 		}
-		
+		ob_start();
 		if(!empty($array)) {
 			foreach($array as $data) {
 				//echo "1 ".$data['Membership_Type']."<br>";
@@ -803,6 +803,9 @@ function subPlan() {
 					"</span><br/></span></div>";
 				}
 			}
+		
+		$result=ob_get_clean();
+		return $result;
 		}
 	}
 }
