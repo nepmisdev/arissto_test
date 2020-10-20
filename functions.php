@@ -789,23 +789,20 @@ function subPlan() {
 		if(!empty($array)) {
 			foreach($array as $data) {
 				echo "1".$data['Membership_Type']."<br>";
-				switch (true) {
-					case stripos($Membership_Type,"AP") >= 0:
+				if (stripos($data, "AP") !== FALSE) {
 						echo "AP".$data['Membership_Type']."<br>";
 						/*return '<div class="plan-detail-odd">
 							<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
 							<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">
 							<?php echo $data['Membership_Type']; ?>
 							</span><br/></span></div>';*/
-					break;
-					case stripos($Membership_Type,"SS") >= 0:
+				} elseif (stripos($data,"SS") !== FALSE) {
 						echo "SS".$data['Membership_Type']."<br>";
 						/*return '<div class="plan-detail-even">
 							<img src="http://arissto.com/test/wp-content/uploads/2020/10/MachineMasterFrontm1.png" class="plan-image"/>
 							<span class="plan-words">RM1 Office Buddies Plan<br/><span class="plan-type">
 							<?php echo $data['Membership_Type']; ?>
 							</span><br/></span></div>';*/
-					break;
 				}
 			/*if (strpos($Membership_Type, $applan) !== FALSE) { ?>
 			<div class="plan-detail-odd">
