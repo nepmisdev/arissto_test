@@ -788,7 +788,7 @@ function subPlan() {
 		
 		if(!empty($array)) {
 			foreach($array as $data) {
-				echo "1 $data['Membership_Type']<br>";
+				echo "1".$data['Membership_Type']."<br>";
 				switch (true) {
 					case stripos($Membership_Type,$applan) >= 0:
 						echo $Membership_Type;
