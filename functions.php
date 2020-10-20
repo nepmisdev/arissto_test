@@ -790,7 +790,7 @@ function subPlan() {
 			foreach($array as $data) {
 				switch (true) {
 					case stripos($Membership_Type,$applan) >= 0:
-						echo "ap";
+						echo $Membership_Type;
 						/*return '<div class="plan-detail-odd">
 							<img src="http://arissto.com/test/wp-content/uploads/2020/10/happy_maker_2.0.png"class="plan-image"/>
 							<span class="plan-words">RM1 Home Coffee Plan<br/><span class="plan-type">
