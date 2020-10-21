@@ -399,3 +399,10 @@ button.btnB{
             font-size:14px;
             color:black;
         }
+	.row:after{
+		clear: both;
+	}
+	.column {
+		float: left;
+		width: 50%;
+	}
