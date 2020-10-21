@@ -407,3 +407,6 @@ button.btnB{
 		width: 50%;
 		margin:10px;
 	}
+#testWrapper {
+	max-width:500px;
+}
