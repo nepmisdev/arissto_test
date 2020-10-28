@@ -812,8 +812,9 @@ function subPlan() {
 
 add_shortcode('testmeta', 'testmeta');
 function testmeta() {
-	$nname = get_user_meta(4,'first_name');
-	echo $nname;
+	$nname = get_user_meta(4);
+	print_r( $nname );
+	//echo $nname;
 }
 
 
