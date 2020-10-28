@@ -809,4 +809,11 @@ function subPlan() {
 		}
 	}
 }
-?>
+
+add_shortcode('testmeta', 'testmeta');
+function testmeta() {
+	$nname = get_user_meta(4,'nickname');
+	echo $nname;
+}
+
+
