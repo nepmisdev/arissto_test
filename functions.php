@@ -814,9 +814,213 @@ add_shortcode('testmeta', 'testmeta');
 function testmeta() {
 	$test_user_id = 4;
 	$test_key = 'nickname';
-	$user_output = get_user_meta( $test_user_id, $test_key, 1 );
-	echo 'The '.$test_key.' value for user id '.$test_user_id.' is: '.$user_output.'.';
+	$user_output = get_user_meta( $test_user_id );
+	echo $user_output;
+}
 
+add_shortcode( 'metaAccountTest', 'metaAccountTest' );
+function metaAccountTest(){
+	
+	$test_user_id = 4;
+	$user_output = get_user_meta( $test_user_id, '', 1 );
+
+	
+	$sql = "SELECT * FROM ct_myaccount_subscription;";
+	
+	$result = $db->get_results($sql);
+
+	foreach($result as $val){
+		$Membership_No = $val->Membership_No;
+		$Document_No = $val->Document_No;
+		$PlanCode = $val->PlanCode;
+		$Subs_DateFrom = $val->Subs_DateFrom;
+		$TotalSubs_Amount = $val->TotalSubs_Amount;
+		$Char_Every = $val->Char_Every;
+		$Char_Period = $val->Char_Period;
+		$Char_Times = $val->Char_Times;
+		$Customer_Type = $val->Customer_Type;
+		$FormType = $val->FormType;
+		$Milk = $val->Milk;
+		$Choco = $val->Choco;
+		$Peace = $val->Peace;
+		$InLove = $val->InLove;
+		$Lonely = $val->Lonely;
+		$MoonLight = $val->MoonLight;
+		$Passion = $val->Passion;
+		$Sunrise = $val->Sunrise;
+		$Luna = $val->Luna;
+		$Amico = $val->Amico;
+		$The_King = $val->The_King;
+		$The_Queen = $val->The_Queen;
+		$Prince = $val->Prince;
+		$Princess = $val->Princess;
+		$Earl = $val->Earl;
+		$Butter_Croissant = $val->Butter_Croissant;
+		$Rasp_Butter_Croissant = $val->Rasp_Butter_Croissant;
+		$Matcha_Butter_Croissant = $val->Matcha_Butter_Croissant;
+		$Charcoal_Butter_Croissant = $val->Charcoal_Butter_Croissant;
+		$Focaccia = $val->Focaccia;
+		$Golden_Roti = $val->Golden_Roti;
+		$CharGold_Roti = $val->CharGold_Roti;
+		$Golden_Cake = $val->Golden_Cake;
+	  
+		$array[] = array(
+			"Membership_No" => $Membership_No,
+			"Document_No" => $Document_No,
+			"PlanCode" => $PlanCode,
+			"Subs_DateFrom" => $Subs_DateFrom,
+			"TotalSubs_Amount" => $TotalSubs_Amount,
+			"Char_Every" => $Char_Every,
+			"Char_Period" => $Char_Period,
+			"Char_Times" => $Char_Times,
+			"Customer_Type" => $Customer_Type,
+			"FormType" => $FormType,
+			"Milk" => $Milk,
+			"Choco" => $Choco,
+			"Peace" => $Peace,
+			"InLove" => $InLove,
+			"Lonely" => $Lonely,
+			"MoonLight" => $MoonLight,
+			"Passion" => $Passion,
+			"Sunrise" => $Sunrise,
+			"Luna" => $Luna,
+			"Amico" => $Amico,
+			"The_King" => $The_King,
+			"The_Queen" => $The_Queen,
+			"Prince" => $Prince,
+			"Princess" => $Princess,
+			"Earl" => $Earl,
+			"Butter_Croissant" => $Butter_Croissant,
+			"Rasp_Butter_Croissant" => $Rasp_Butter_Croissant,
+			"Matcha_Butter_Croissant" => $Matcha_Butter_Croissant,
+			"Charcoal_Butter_Croissant" => $Charcoal_Butter_Croissant,
+			"Focaccia" => $Focaccia,
+			"Golden_Roti" => $Golden_Roti,
+			"CharGold_Roti" => $CharGold_Roti,
+			"Golden_Cake" =>$Golden_Cake,);
+	}
+	 
+?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.6">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Datatable</title>
+		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"/>
+	</head>
+	<style>
+		table, th, td {
+			border: 0.5px solid #d9d9d9;
+			border-collapse: collapse;
+			font-size:12px;
+		}
+		.dataTables_filter input { height: 30px;margin-bottom: 20px; margin-top:20px;}
+		.dataTables_length select{
+			height: 30px;
+			width: 100px;
+			margin-bottom: 20px; margin-top:20px;
+		}
+	</style>
+	<body>
+		<table id="userTable1" class="stripe" style="width:100%;">
+			<thead>
+				<th>Membership_No</th>
+				<th>Document_No</th>
+				<th>PlanCode</th>
+				<th>Subs_DateFrom</th>
+				<th>TotalSubs_Amount</th>
+				<th>Char_Every</th>
+				<th>Char_Period</th>
+				<th>Char_Times</th>
+				<th>Customer_Type</th>
+				<th>FormType</th>
+				<th>Milk</th>
+				<th>Choco</th>
+				<th>Peace</th>
+				<th>InLove</th>
+				<th>Lonely</th>
+				<th>MoonLight</th>
+				<th>Passion</th>
+				<th>Sunrise</th>
+				<th>Luna</th>
+				<th>Amico</th>
+				<th>The_King</th>
+				<th>The_Queen</th>
+				<th>Prince</th>
+				<th>Princess</th>
+				<th>Earl</th>
+				<th>Butter_Croissant</th>
+				<th>Rasp_Butter_Croissant</th>
+				<th>Matcha_Butter_Croissant</th>
+				<th>Charcoal_Butter_Croissant</th>
+				<th>Focaccia</th>
+				<th>Golden_Roti</th>
+				<th>CharGold_Roti</th>
+				<th>Golden_Cake</th>
+			</thead>
+			<tbody>
+				<?php if(!empty($array)) { 
+		foreach($array as $data) { ?>
+				<tr>
+					<td><?php echo $data['Membership_No']; ?></td>
+					<td><?php echo $data['Document_No']; ?></td>
+					<td><?php echo $data['PlanCode']; ?></td>
+					<td><?php echo $data['Subs_DateFrom']; ?></td>
+					<td><?php echo $data['TotalSubs_Amount']; ?></td>
+					<td><?php echo $data['Char_Every']; ?></td>
+					<td><?php echo $data['Char_Period']; ?></td>
+					<td><?php echo $data['Char_Times']; ?></td>
+					<td><?php echo $data['Customer_Type']; ?></td>
+					<td><?php echo $data['FormType']; ?></td>
+					<td><?php echo $data['Milk']; ?></td>
+					<td><?php echo $data['Choco']; ?></td>
+					<td><?php echo $data['Peace']; ?></td>
+					<td><?php echo $data['InLove']; ?></td>
+					<td><?php echo $data['Lonely']; ?></td>
+					<td><?php echo $data['MoonLight']; ?></td>
+					<td><?php echo $data['Passion']; ?></td>
+					<td><?php echo $data['Sunrise']; ?></td>
+					<td><?php echo $data['Luna']; ?></td>
+					<td><?php echo $data['Amico']; ?></td>
+					<td><?php echo $data['The_King']; ?></td>
+					<td><?php echo $data['The_Queen']; ?></td>
+					<td><?php echo $data['Prince']; ?></td>
+					<td><?php echo $data['Princess']; ?></td>
+					<td><?php echo $data['Earl']; ?></td>
+					<td><?php echo $data['Butter_Croissant']; ?></td>
+					<td><?php echo $data['Rasp_Butter_Croissant']; ?></td>
+					<td><?php echo $data['Matcha_Butter_Croissant']; ?></td>
+					<td><?php echo $data['Charcoal_Butter_Croissant']; ?></td>
+					<td><?php echo $data['Focaccia']; ?></td>
+					<td><?php echo $data['Golden_Roti']; ?></td>
+					<td><?php echo $data['CharGold_Roti']; ?></td>
+					<td><?php echo $data['Golden_Cake']; ?></td>
+				</tr>
+				<?php } ?>
+				<?php } ?>
+			</tbody>
+		</table>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+		
+		<script> 
+			$(document).ready(function() {
+				$('#userTable1').DataTable({
+					"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+					"iDisplayLength": 25, // to display 25 rows
+					"bAutoWidth": true,
+					"maxWidth": screen.width,
+					"scrollX": true
+				});
+			});
+		</script>
+	</body>
+</html>
+<?php
 }
 
 
