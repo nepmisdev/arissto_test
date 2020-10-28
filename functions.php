@@ -812,9 +812,10 @@ function subPlan() {
 
 add_shortcode('testmeta', 'testmeta');
 function testmeta() {
-	$nname = get_user_meta(4);
-	print_r( $nname );
-	//echo $nname;
+	$test_user_id = 9;
+	$test_key = 'last_name';
+	$user_output = get_user_meta( $test_user_id, $test_key );
+	echo 'The '.$test_key.' value for user id '.$test_user_id.' is: '.$user_output.'.';
 }
 
 
