@@ -815,7 +815,7 @@ function testmeta() {
 	$test_user_id = 4;
 	$test_key = 'nickname';
 	$user_output = get_user_meta( $test_user_id );
-	echo $user_output;
+	print_r( $user_output );
 }
 
 add_shortcode( 'metaAccountTest', 'metaAccountTest' );
