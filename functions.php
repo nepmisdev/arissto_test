@@ -867,4 +867,30 @@ function metaAccountTest(){
 <?php
 }
 
+add_shortcode('CAinfo','CAinfo');
+function CAinfo(){
+	if( is_user_logged_in() ){
+		global $wpdb;
+		$sql = "SELECT Email, Sales_Partner_Code, Sales_Partner_Name, Sales_Partner_Contact FROM ct_myaccount_flutter WHERE Email = 'sw_tan@nepholdings.com.my'";
+		$result = $wpdb->get_results($sql);
+		foreach($result as $val){
+			$email = $val->Email;
+			$CAcode = $val->Sales_Partner_Code;
+			$CAname = $val->Sales_Partner_Name;
+			$CAcontact = $val->Sales_Partner_Contact;
+		}
+		return '<div style="text-align: left;font-size: 18px;color: #AC1A2F;padding-left: 45px; padding-top: 15px;">Dealer Name:</div>
+				<div style="text-align: left;font-size: 18px;padding-left:45px; padding-bottom: 30px;">'.$CAname.'</div>
+				<div style="float:left;margin-right: 80px">
+					<div style="text-align: left;font-size: 18px;color: #AC1A2F;padding-left: 45px;">Contact No:</div>
+					<div style="text-align: left;font-size: 18px;padding-left: 45px; padding-bottom: 30px;">'.$CAcontact.'</div>
+				</div>
+				<div style="text-align: left;font-size: 18px;color: #AC1A2F;padding-left: 45px;">Type:</div>
+				<div style="text-align: left;font-size: 18px;padding-left: 45px; padding-bottom: 30px;">'.$CAcode.'</div>
+				<div style="text-align: left;font-size: 18px;color: #AC1A2F;padding-left: 45px;">Dealer Status:</div>
+				<div style="text-align: left;font-size: 18px;padding-left: 45px; padding-bottom: 30px;">Active/Inactive</div>';
+	}
+
+}
+
 
