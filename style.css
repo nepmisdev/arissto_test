@@ -138,13 +138,13 @@ Text Domain:  Avada
 	box-shadow: 0px 0px 24px 10px rgba(0, 0, 0, 0.15);
 	border-radius: 20px;
 	width: 450px;
-	height: 600px;
+	height: auto;
 }  
 
 .container2 {
     background-color: lightgreen;
 	width: 450px;
-	height: 600px;
+	height: auto;
 }  
 
 .star-widget{
@@ -197,6 +197,7 @@ button.btnB{
 	border-radius: 30px;
 	border: 1px solid #AC1A2F;
 	color: #AC1A2F;
+	background-color: #FFFFFF;
 	font-size: 15px;
 	text-align: center;
 }      
