@@ -431,3 +431,19 @@ button.btnB{
 		width: 50%;
 		margin:10px;
 	}
+
+.alertBox{
+	width: 250px;
+	height: 250px;;
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 8px;
+	padding: 30px;
+}
+
+.alertBoxIcon{
+	width: 100px;
+	height: 100px;
+    background: rgb(246,232,234);
+	border-radius: 50%;
+}
