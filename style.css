@@ -439,6 +439,12 @@ button.btnB{
 	text-align: center;
 	border-radius: 8px;
 	padding: 30px;
+	box-shadow: 5px 8px 6px rgba(0,0,0,0.2);
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
 }
 
 .alertBoxIcon{
@@ -446,14 +452,18 @@ button.btnB{
 	height: 100px;
     background: rgb(246,232,234);
 	border-radius: 50%;
+	justify-content: center;
+   align-items: center;
+   display: flex;
+   color: #AC1A2F;
+   font-size: 50px;
 }
 
 #menu {
 	list-style-type: none;
 	width: 90%;
 	margin: auto;
-	padding-bottom: 20px;
-	padding-left: 0px;
+	padding: 20px 20px 20px 0px;
 	text-align: left;
 }
 
