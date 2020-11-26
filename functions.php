@@ -893,4 +893,20 @@ function CAinfo(){
 
 }
 
-
+add_shortcode('menu' , 'menu');
+function menu(){
+	?>
+	<div>
+		<ul id="menu">
+			<li><a href="http://localhost/wordpress/profile/">MY PROFILE</a></li>
+			<li><a href="http://localhost/wordpress/my-subscription/">MY SUBSCRIPTION</a></li>
+			<li><a href="#">MY ORDER</a></li>
+			<li><a href="#">MY REDEMPTION</a></li>
+			<li><a href="http://localhost/wordpress/rating/">MY ARISSTO DEALER</a></li>
+			<li><a style="background-image: none;" href="#">MY NOTIFICATION & NEWS</a></li>
+		</ul>
+	</div>
+	
+	<?php
+	return ob_get_clean(); 
+}

@@ -447,3 +447,37 @@ button.btnB{
     background: rgb(246,232,234);
 	border-radius: 50%;
 }
+
+#menu {
+	list-style-type: none;
+	width: 90%;
+	margin: auto;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	text-align: left;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2020/11/navi_bg_divider.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	display: block;
+	line-height: 30px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #371C1C;
+}
+
+#menu a:hover {
+	color: #AC1A2F;
+}
+
+#menu a:active{
+	color: #AC1A2F;
+}
